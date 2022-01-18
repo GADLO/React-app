@@ -6,7 +6,7 @@ import Random from './Random'
 import Button from './button'
 import ScoreKeep from './ScoreKeep'
 import Icon from './Icon'
-import Ball from './Ball'
+
 import Lottery from './Lottery'
 
 function App() {

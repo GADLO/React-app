@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Neonderthaw&display=swap");
+h1 {
+  color: lemonchiffon;
+}
+.Board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  border-radius: 10px;
+  margin:0 auto;
+  box-shadow:0 0 30px #fff,-10px 0 30px #f0f,10px 0 30px #0ff
+}
+.won {
+}
+
+.lose {
+  visibility: hidden;
+}
+
+.neon {
+  font-family: Neonderthaw;
+  font-size: 3rem;
+  color: rgb(233, 152, 112);
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+.neon-green{
+    font-family: Neonderthaw;
+    font-size: 3rem;
+    color: #fff;
+    animation: glow-green 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow-green {
+    from {
+      text-shadow: 0 0 5px #9ef01a, 0 0 10px #9ef01a, 0 0 15px #9a031e,
+        0 0 20px #004b23, 0 0 25px #004b23, 0 0 30px #004b23, 0 0 35px #004b23;
+    }
+    to {
+      text-shadow: 0 0 10px #9ef01a, 0 0 20px #9ef01a, 0 0 30px #0073e6,
+        0 0 40px #004b23, 0 0 50px #004b23, 0 0 60px #004b23, 0 0 70px #004b23;
+    }
+  }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #e36414, 0 0 10px #e36414, 0 0 15px #9a031e,
+      0 0 20px #9a031e, 0 0 25px #9a031e, 0 0 30px #9a031e, 0 0 35px #9a031e;
+  }
+  to {
+    text-shadow: 0 0 10px #e36414, 0 0 20px #e36414, 0 0 30px #9a031e,
+      0 0 40px #9a031e, 0 0 50px #9a031e, 0 0 60px #9a031e, 0 0 70px #9a031e;
+  }
+}

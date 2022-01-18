@@ -1,0 +1,15 @@
+.events{
+    width: 200px;
+    height: 200px;
+    background-color: #014f86;
+}
+
+.events:hover{
+    background-color: #a9d6e5;
+}
+
+.center{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
