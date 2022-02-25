@@ -1,13 +1,113 @@
 body {
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ li{
+  list-style: none;
+  padding-left:0px;
+}
+
+ul{
+  margin:0px;
+  padding: 0px;
+  width: 100%;
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.todo{
+  margin-top: 10rem;
+  background-color: #c7d66d;
+  padding: 1rem;
+  border: 5px solid #dceab2;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo h1,p{
+    color: #fff;
+}
+
+.todo-label {
+  padding: 1rem;
+}
+
+.todo-input{
+  margin: 1rem;
+  padding: 1rem;
+  border:0;
+  border-radius: 1rem;
+}
+
+.todo-btn{
+  margin: 1rem;
+  padding: 1rem;
+  border:0;
+  border-radius: 1rem;
+}
+
+.todo-list{
+ display: flex;
+  background-color: #fff;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.todo-list li{
+  width: 60%;
+  display: flex;
+}
+
+.todo-list button{
+  width: 20%;
+  background: none;
+  border:none
+}
+
+.completed{
+  color:gray;
+  text-decoration: line-through;
+}
+
+.todo-list .completed:before{
+  content: "";
+  /* position:absolute; */
+  top:50%;
+  left:-0.5rem;
+  display: block;
+  width: 0%;
+  height:2px;
+  /* background: #fff; */
+  animation:strikeitem 0.8s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+  to{
+    width:calc(100% + 1rem)
+  }
 }
